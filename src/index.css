@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* GBA Retro Handheld Pixel-Grid & Vignette Core Glow */
+.retro-material-bg {
+  background-color: #07070a;
+  background-image: 
+    /* 1. Deep fiery core radial glow in center */
+    radial-gradient(circle at 50% 30%, rgba(220, 38, 38, 0.14) 0%, rgba(245, 158, 11, 0.04) 35%, rgba(7, 7, 10, 0) 70%),
+    /* 2. Micro screen pixel grid matrix */
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.02) 1.5px, transparent 1.5px),
+    /* 3. Horizontal layout guidelines resembling classic LCD panel glass */
+    linear-gradient(rgba(255, 255, 255, 0.005) 1px, transparent 1px);
+  background-size: 100% 100%, 24px 24px, 100% 48px;
+  background-attachment: fixed;
+}
+
+/* Glassy retro chassis containers to let the deep background glow peek through */
+.retro-glass-panel {
+  background: rgba(12, 12, 16, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(63, 63, 70, 0.35);
+}
+
+.retro-glass-panel-heavy {
+  background: rgba(8, 8, 12, 0.94);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(63, 63, 70, 0.45);
+}
+

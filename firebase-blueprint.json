@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "Save": {
+      "title": "SaveState",
+      "description": "Cloud save state containing character stats, skills, equipment, inventory, and legacy achievements",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "username": { "type": "string" },
+        "characterName": { "type": "string" },
+        "stats": { "type": "object" },
+        "skills": { "type": "object" },
+        "equipment": { "type": "object" },
+        "inventory": { "type": "array" },
+        "legacy": { "type": "object" },
+        "logs": { "type": "array" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId", "username", "stats", "skills", "equipment", "inventory", "legacy"]
+    }
+  },
+  "firestore": {
+    "/saves/{saveId}": {
+      "schema": "Save",
+      "description": "Cross-platform progress saves for MMO BitLife-like pixel crawler"
+    }
+  }
+}

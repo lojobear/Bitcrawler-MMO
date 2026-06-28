@@ -1,0 +1,6 @@
+{
+  "name": "Pixel RPG BitCrawler",
+  "description": "A retro turn-based RPG with permadeath, deep skill leveling, procedural pixel loot, and seamless cross-platform cloud saves.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
